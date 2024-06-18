@@ -2,9 +2,31 @@ a {
     padding: 5px;
 }
 
+#title {
+    color: #A6192E
+}
 
+#triumf {
+    color: #47B2D6;
+}
+
+#bccancer {
+    color: #945ca4
+}
+
+#link_button {
+    background-color: #138C82;
+    color: white;
+    border-color: #138C82;
+
+}
 
 a:hover {
-    color: #429bdf;
+    color: #F19C33;
+
+}
+
+body {
+    background-color: #F0EECD;
 
 }
