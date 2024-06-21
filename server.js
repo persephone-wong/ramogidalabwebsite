@@ -9,6 +9,7 @@ app.use(express.json());
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+const path = require('path');
 
 
 
@@ -35,9 +36,12 @@ app.listen(3000, () => {
 });
 
 express.static('public');
+app.use(express.static(path.join(__dirname, '../scripts')));
+
 
 app.get('/', (req, res) => {
     res.render('index.ejs');
+
 });
 
 app.get('/login', (req, res) => {

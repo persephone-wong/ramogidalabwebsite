@@ -6,25 +6,69 @@ a {
     color: #A6192E
 }
 
+#title:hover {
+    color:#138C82
+}
+
 #triumf {
     color: #47B2D6;
+}
+
+#triumf:hover {
+    color: #F19C33;
 }
 
 #bccancer {
     color: #945ca4
 }
 
-#link_button {
-    background-color: #138C82;
-    color: white;
-    border-color: #138C82;
-
+#bccancer:hover {
+    color:#A6192E
 }
 
 a:hover {
-    color: #F19C33;
+    color: #A6192E;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #F0EECD;
+
 
 }
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+#modal_button {
+    background-color: #A6192E;
+    color: white;
+    border-color: #A6192E;
+
+}
+
+
 
 body {
     background-color: #F0EECD;
