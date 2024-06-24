@@ -82,3 +82,19 @@ body {
     background-color: #F0EECD;
 
 }
+
+#research_intro {
+    display: block;
+}
+
+#research_1 {
+    display: none;
+}
+
+#research_2 {
+    display: none;
+}
+
+#research_3 {
+    display: none;
+}
