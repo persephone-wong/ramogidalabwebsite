@@ -1,7 +1,7 @@
 <%- include('../templates/header'); -%>
 
 
-    <div class="pt-12 text-7xl text-center flex flex-row justify-between">
+    <div class="pt-12 mt-8 text-7xl text-center flex flex-row justify-between">
         <div class="w-1/6">
         </div>
         <div class="w-4/6 items-center flex flex-col">
@@ -11,26 +11,24 @@
                 innovative and unconventional radiometals, and <a id="bccancer" class="font-semibold"
                     href="http://www.bccancer.bc.ca/">BC Cancer</a> - to evaluate our radiopharmaceuticals <span
                     class="italic">in vivo</span>.</div>
-            <div id="modal_button" class="text-xl px-1 mt-4 rounded-full border-4">
-                Modal open
+            <div id="modal_button" class="text-2xl px-4 py-2 mt-10 rounded-full border-4">
+                Research Overview
             </div>
         </div>
         <div class="w-1/6"></div>
     </div>
 
     <div id="pageModal" class="modal font-mono">
-        <div class="modal-content px-6">
-            <span class="close">&times;</span>
-            <div>Overview</div>
-            <img src="picture1.jpg" alt="">
+        <div class="modal-content px-6 text-xl space-y-2">
+            <span class="close text-5xl">x</span>
+            <div class="font-bold text-4xl">Research Overview</div>
+            <div class="flex flex-row space-x-1">
             <p>Radiopharmaceutical therapy (RPT) and radiopharmaceutical imaging are powerful techniques with the
                 ability to image disease non-invasively and subsequently treat the diseased tissue by injecting a
                 radioactive isotope fused to a disease-targeting biomolecule. The targeting vector (aka biomolecule) is
                 often a small molecule, peptide, or antibody which exhibits high affinity for over-expressed surface
-                receptors on diseased cells (e.g., cancer cells). 
-                <br>
-                <br>
-            <img src="picture2.jpg" alt="">
+                receptors on diseased cells (e.g., cancer cells).</p> <img src="picture1.jpg" alt=""> </div>
+                <div>
                 Covalent attachment of the radionuclide to a
                 biomolecule ensures that the radioactive payload is specifically and efficiently delivered to the cells
                 or tissue that a physician needs to image or treat. Our lab exploits metallic radionuclides (aka
@@ -39,15 +37,14 @@
                 emission computed tomography (SPECT), or positron emission tomography (PET) imaging, respectively.
                 Radioisotopes that emit beta particles, alpha particles, or Meitner-Auger electrons can be used for RPT,
                 since these radioactive emissions are associated with high linear energy transfer (LET), and can cause
-                harm and kill target cells.
-                <br>
-                <br>
-                A key advantage of radiometals (vs conventional non-metallic radionuclides) is the availability of
+                harm and kill target cells.</div>
+                <img src="picture2.jpg" alt="">
+                <div>A key advantage of radiometals (vs conventional non-metallic radionuclides) is the availability of
                 multiple isotopes of the same element with appropriate decay characteristics that can be exploited for
                 either imaging or therapy. This combination of imaging to diagnose, stage and track disease with therapy
                 to treat has been termed “theranostics” - as is the future of nuclear medicine. Our lab works across the
                 periodic table with an overall goal to develop theranostic radiometal pairs - from beamline to bedside.
-                </p>
+            </div>
 
         </div>
     </div>
