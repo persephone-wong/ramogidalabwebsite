@@ -1,6 +1,6 @@
 let scrolls = 0;
 let lastScrollPos = 0;
-
+let shouldChangeResearch = true;
 
 
 function debounce(func, wait) {
@@ -15,21 +15,32 @@ function debounce(func, wait) {
     };
 };
 
-scrollFunction = debounce (function () {
+scrollFunction = debounce(function () {
+    if (!shouldChangeResearch) {
+        return;
+    };
+
     let currentScrollPos = window.scrollY || document.documentElement.scrollTop;
     if (currentScrollPos > lastScrollPos) {
+        if (scrolls < 3) {
         scrolls++;
         console.log(scrolls);
-        changeResearch();
-    } else {
+        changeResearch();}
+    } else if (currentScrollPos < lastScrollPos) {
         if (scrolls > 0) {
-        scrolls--;}
-        console.log(scrolls);
-        changeResearch();
+            scrolls--;
+            changeResearch();
+        }        
+    }
+    if (currentScrollPos = lastScrollPos) {
+        return;
     }
     lastScrollPos = currentScrollPos <= 0 ? 0 : currentScrollPos;
-
-},500);
+    shouldChangeResearch = false;
+    setTimeout(() => {
+        shouldChangeResearch = true;
+    }, 10000);
+}, 1000);
 
 changeResearch = function () {
     if (scrolls === 0) {
@@ -56,6 +67,14 @@ changeResearch = function () {
         document.getElementById('research_2').style.display = 'none';
         document.getElementById('research_3').style.display = 'block';
     }
+    shouldChangeResearch = false;
+    window.scrollTo(0, 10);
+    lastScrollPos = window.scrollY
+    setTimeout(() => {
+        shouldChangeResearch = true;
+    }, 1000);
+
+
 };
 
 

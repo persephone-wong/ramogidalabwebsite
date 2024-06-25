@@ -85,16 +85,20 @@ body {
 
 #research_intro {
     display: block;
+    min-height: 500px;
 }
 
 #research_1 {
     display: none;
+    min-height: 500px;
 }
 
 #research_2 {
     display: none;
+    min-height: 500px;
 }
 
 #research_3 {
     display: none;
+    min-height: 500px;
 }
