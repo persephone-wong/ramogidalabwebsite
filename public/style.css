@@ -85,20 +85,36 @@ body {
 
 #research_intro {
     display: block;
-    min-height: 500px;
+    min-height: 450px;
 }
 
 #research_1 {
     display: none;
-    min-height: 500px;
+    min-height: 450px;
 }
 
 #research_2 {
     display: none;
-    min-height: 500px;
+    min-height: 450px;
 }
 
 #research_3 {
     display: none;
-    min-height: 500px;
+    min-height: 450px;
+}
+
+#research_dot_intro {
+    display: block;
+}
+
+#research_dot_1 {
+    display: none;
+}
+
+#research_dot_2 {
+    display: none;
+}
+
+#research_dot_3 {
+    display: none;
 }

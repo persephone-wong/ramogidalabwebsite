@@ -39,40 +39,57 @@ scrollFunction = debounce(function () {
     shouldChangeResearch = false;
     setTimeout(() => {
         shouldChangeResearch = true;
-    }, 10000);
-}, 1000);
+    }, 500);
+}, 100);
 
 changeResearch = function () {
     if (scrolls === 0) {
         document.getElementById('research_intro').style.display = 'block';
+        document.getElementById('research_dot_intro').style.display = 'block';
         document.getElementById('research_1').style.display = 'none';
+        document.getElementById('research_dot_1').style.display = 'none';
         document.getElementById('research_2').style.display = 'none';
+        document.getElementById('research_dot_2').style.display = 'none';
         document.getElementById('research_3').style.display = 'none';
+        document.getElementById('research_dot_3').style.display = 'none';
+        
     }
     if (scrolls === 1) {
         document.getElementById('research_intro').style.display = 'none';
+        document.getElementById('research_dot_intro').style.display = 'none';
         document.getElementById('research_1').style.display = 'block';
+        document.getElementById('research_dot_1').style.display = 'block';
         document.getElementById('research_2').style.display = 'none';
+        document.getElementById('research_dot_2').style.display = 'none';
         document.getElementById('research_3').style.display = 'none';
+        document.getElementById('research_dot_3').style.display = 'none';
     }
     if (scrolls === 2) {
         document.getElementById('research_intro').style.display = 'none';
+        document.getElementById('research_dot_intro').style.display = 'none';
         document.getElementById('research_1').style.display = 'none';
+        document.getElementById('research_dot_1').style.display = 'none';
         document.getElementById('research_2').style.display = 'block';
+        document.getElementById('research_dot_2').style.display = 'block';
         document.getElementById('research_3').style.display = 'none';
+        document.getElementById('research_dot_3').style.display = 'none';
     }
     if (scrolls === 3) {
         document.getElementById('research_intro').style.display = 'none';
+        document.getElementById('research_dot_intro').style.display = 'none';
         document.getElementById('research_1').style.display = 'none';
+        document.getElementById('research_dot_1').style.display = 'none';
         document.getElementById('research_2').style.display = 'none';
+        document.getElementById('research_dot_2').style.display = 'none';
         document.getElementById('research_3').style.display = 'block';
+        document.getElementById('research_dot_3').style.display = 'block';
     }
     shouldChangeResearch = false;
-    window.scrollTo(0, 10);
+    window.scrollTo(0, 100);
     lastScrollPos = window.scrollY
     setTimeout(() => {
         shouldChangeResearch = true;
-    }, 1000);
+    }, 500);
 
 
 };
