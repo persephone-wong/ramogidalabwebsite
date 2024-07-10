@@ -11,54 +11,69 @@
 
 
 <div class="flex justify-center">
-    <div class="flex flex-col items-center w-10/12 border border-black">
+    <div class="flex flex-col items-center w-10/12">
         <div class="flex flex-row w-full">
-            <div class="flex justify-center text-2xl w-1/2 text-center"><div>SFU Chemistry Lab</div></div>
-            <div class="flex justify-center text-2xl w-1/2 text-center"><div>Triumf Radiochemistry Lab</div></div>
-        </div>
-        
-        <div class="flex flex-row w-full">
-            <div class="flex text-xl w-1/2"><div>
+            <div class="flex justify-center w-1/2 text-center flex-col">
+                <div id="sfu_location" class="text-2xl">SFU Chemistry Lab</div>
+                <div class="text-xl">Address</div>
+                <div id="sfu_address" class="text-center text-l"><div>
                 Shrum Science Building C8065 <br>
                 Simon Fraser University <br>
                 ​Department of Chemistry <br>
                 8888 University Dr. <br>
                 Burnaby BC <br>
                 V5A 1S6 <br>
-                CANADA
-            </div></div>
-            <div class="flex text-2xl w-1/2 text-center">
-                <div style="width: 100%; height: 100%;">
-                    <iframe 
-                    
-                        style="width:100%; height:100%; border:0;" 
-                        referrerpolicy="no-referrer-when-downgrade" 
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBLscaDBXFe0THRR19sX-lqMIP75UtUTgk&q=Shrum+Science+Building+C8065+Simon+Fraser+University" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
+                Canada
             </div>
-        </div>
-        
-        <div class="flex flex-row w-full">
-            <div class="flex text-xl w-1/2"><div>
+            <div id="triumf_address" class="text-l text-center"><div>
                 Life Sciences <br>
                 ​TRIUMF <br>
                 4004 Wesbrook Mall <br>
                 Vancouver BC <br>
                 V6T 1Z1 <br>
-                CANADA
+                Canada
             </div></div>
-            <div class="flex justify-center text-xl w-1/2 text-center">
-                <div style="width: 100%; height: 100%;">
-                    <iframe 
-                        style="width:100%; height:100%; border:0;" 
-                        referrerpolicy="no-referrer-when-downgrade" 
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBLscaDBXFe0THRR19sX-lqMIP75UtUTgk&q=Life+Sciences+Triumf+4004 Wesbrook Mall" 
+        
+        </div>
+        
+        </div>
+            <div id="triumf_address" class="flex justify-center text-2xl w-1/2 text-center flex-col">
+            <div>Triumf Radiochemistry Lab</div>
+            <div class="text-xl">Location</div>
+            <div class="sfu_visible" style="width: 100%; height: 100%;">
+                <iframe       
+                    style="width:100%; height:100%; border:0;" 
+                    referrerpolicy="no-referrer-when-downgrade" 
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBLscaDBXFe0THRR19sX-lqMIP75UtUTgk&q=Shrum+Science+Building+C8065+Simon+Fraser+University" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div style="width: 100%; height: 100%;">
+                <iframe 
+                    style="width:100%; height:100%; border:0;" 
+                    referrerpolicy="no-referrer-when-downgrade" 
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBLscaDBXFe0THRR19sX-lqMIP75UtUTgk&q=Life+Sciences+Triumf+4004 Wesbrook Mall" 
 
-                        allowfullscreen>
-                    </iframe>
-                </div>
+                    allowfullscreen>
+                </iframe>
+            </div>
+        
+        </div>
+
+    
+        </div>
+        
+        <div id="visible_address" class="flex flex-row w-full">
+
+            <div class="flex text-2xl w-1/2 text-center">
+
+            </div>
+        </div>
+        
+        <div id="hidden_address" class="flex flex-row w-full">
+
+            <div class="flex justify-center text-xl w-1/2 text-center">
+
             </div>
         </div>
     
@@ -75,6 +90,7 @@
     </div>
 
 
+    <script src="scripts/contact.js"></script>
 
 
 

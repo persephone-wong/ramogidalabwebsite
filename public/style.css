@@ -118,3 +118,20 @@ body {
 #research_dot_3 {
     display: none;
 }
+
+.sfu_visible {
+    display: flex;
+}
+
+.sfu_hidden {
+    display: none;
+}
+
+.triumf_visible {
+    display: flex;
+}
+
+.triumf_hidden {
+    display: none;
+}
+
