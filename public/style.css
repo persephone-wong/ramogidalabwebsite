@@ -119,19 +119,31 @@ body {
     display: none;
 }
 
-.sfu_visible {
-    display: flex;
+#sfu_address {
+    display: block
 }
 
-.sfu_hidden {
-    display: none;
+#sfu_map {
+    display: block
 }
 
-.triumf_visible {
-    display: flex;
+#triumf_address {
+    display: none
 }
 
-.triumf_hidden {
-    display: none;
+#triumf_map {
+    display: none
+}
+
+#sfu_button {
+    background-color: #A6192E;
+    color: white;
+    border-color: #A6192E;
+}
+
+
+#triumf_button {
+    color: black;
+    
 }
 
