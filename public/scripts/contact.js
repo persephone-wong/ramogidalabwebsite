@@ -1,4 +1,5 @@
 place = "sfu"
+student_type = "graduate"
 
 document.getElementById('triumf_button').addEventListener('click', function() {
     if (place === "sfu") {
@@ -38,5 +39,37 @@ document.getElementById('sfu_button').addEventListener('click', function() {
         document.getElementById('triumf_button').style.borderColor = 'transparent';
         
         place = "sfu";
+    }
+});
+
+document.getElementById('undergrad_button').addEventListener('click', function() {
+    if (student_type === "graduate") {
+        document.getElementById('graduate_info').style.display = 'none';
+        document.getElementById('undergrad_info').style.display = 'block';
+        student_type = "undergraduate";
+
+        document.getElementById('undergrad_button').style.backgroundColor = '#F19C33'
+        document.getElementById('undergrad_button').style.color = 'white'
+        document.getElementById('undergrad_button').style.borderColor = '#F19C33'
+        
+        document.getElementById('graduate_button').style.backgroundColor = 'transparent';
+        document.getElementById('graduate_button').style.color = 'black';
+        document.getElementById('graduate_button').style.borderColor = 'transparent';
+
+    }});
+
+document.getElementById('graduate_button').addEventListener('click', function() {
+    if (student_type === "undergraduate") {
+        document.getElementById('undergrad_info').style.display = 'none';
+        document.getElementById('graduate_info').style.display = 'block';
+        student_type = "graduate";
+
+        document.getElementById('graduate_button').style.backgroundColor = '#138C82'
+        document.getElementById('graduate_button').style.color = 'white'
+        document.getElementById('graduate_button').style.borderColor = '#138C82'
+
+        document.getElementById('undergrad_button').style.backgroundColor = 'transparent';
+        document.getElementById('undergrad_button').style.color = 'black';
+        document.getElementById('undergrad_button').style.borderColor = 'transparent';
     }
 });

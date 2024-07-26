@@ -144,6 +144,19 @@ body {
 
 #triumf_button {
     color: black;
-    
+
 }
 
+#graduate_button {
+    background-color: #138C82;
+    color: white;
+    border-color: #138C82;
+}
+
+#undergrad_button {
+color: black;
+}
+
+#undergrad_info {
+    display: none;
+}
