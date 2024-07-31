@@ -65,12 +65,12 @@ app.get('/research', (req, res) => {
     res.render('research.ejs');
 });
 
-app.get('/people', (req, res) => {
-    res.render('people.ejs');
+app.get('/group', (req, res) => {
+    res.render('group.ejs');
 });
 
 app.get('/publications', (req, res) => {
-    res.render('people.ejs');
+    res.render('publications.ejs');
 });
 
 app.get('/contact', (req, res) => {

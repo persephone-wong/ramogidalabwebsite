@@ -138,23 +138,48 @@ body {
 #sfu_button {
     background-color: #A6192E;
     color: white;
-    border-color: #A6192E;
+    border-bottom: 2px solid;
+    border-right: 2px solid ;
+    border-color:#A6192E;
+}
+
+#sfu_button:hover {
+    background-color: #A6192E;
 }
 
 
 #triumf_button {
     color: black;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-color: black;
+}
 
+#triumf_button:hover {
+    background-color: #47B2D6;
 }
 
 #graduate_button {
     background-color: #138C82;
     color: white;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
     border-color: #138C82;
+}
+
+#graduate_button:hover {
+    background-color: #138C82;
 }
 
 #undergrad_button {
 color: black;
+border-bottom: 2px solid;
+border-left: 2px solid;
+border-color: black;
+}
+
+#undergrad_button:hover {
+    background-color: #F19C33;
 }
 
 #undergrad_info {

@@ -7,14 +7,23 @@ document.getElementById('triumf_button').addEventListener('click', function() {
         document.getElementById('sfu_map').style.display = 'none';
         document.getElementById('triumf_address').style.display = 'block';
         document.getElementById('triumf_map').style.display = 'block';
+
+        document.getElementById('triumf_button').style.backgroundColor = '#47B2D6';
+        document.getElementById('triumf_button').style.color = 'white';
+        document.getElementById('triumf_button').style.borderColor = '#47B2D6';
         
-        document.getElementById('triumf_button').style.backgroundColor = '#47B2D6'
-        document.getElementById('triumf_button').style.color = 'white'
-        document.getElementById('triumf_button').style.borderColor = '#47B2D6'
+        
+
+
 
         document.getElementById('sfu_button').style.backgroundColor = 'transparent';
         document.getElementById('sfu_button').style.color = 'black';
-        document.getElementById('sfu_button').style.borderColor = 'transparent';
+        document.getElementById('sfu_button').style.borderColor = 'black';
+        document.getElementById('sfu_button').addEventListener('mouseover', function() {
+            document.getElementById('sfu_map').style.backgroundColor = '#A6192E';
+            document.getElementById('sfu_map').style.color = 'white';
+        });
+
         
 
 
@@ -36,7 +45,7 @@ document.getElementById('sfu_button').addEventListener('click', function() {
 
         document.getElementById('triumf_button').style.backgroundColor = 'transparent';
         document.getElementById('triumf_button').style.color = 'black';
-        document.getElementById('triumf_button').style.borderColor = 'transparent';
+        document.getElementById('triumf_button').style.borderColor = 'black';
         
         place = "sfu";
     }
@@ -54,7 +63,7 @@ document.getElementById('undergrad_button').addEventListener('click', function()
         
         document.getElementById('graduate_button').style.backgroundColor = 'transparent';
         document.getElementById('graduate_button').style.color = 'black';
-        document.getElementById('graduate_button').style.borderColor = 'transparent';
+        document.getElementById('graduate_button').style.borderColor = 'black';
 
     }});
 
@@ -70,6 +79,6 @@ document.getElementById('graduate_button').addEventListener('click', function() 
 
         document.getElementById('undergrad_button').style.backgroundColor = 'transparent';
         document.getElementById('undergrad_button').style.color = 'black';
-        document.getElementById('undergrad_button').style.borderColor = 'transparent';
+        document.getElementById('undergrad_button').style.borderColor = 'black';
     }
 });
