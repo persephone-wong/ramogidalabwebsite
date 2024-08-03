@@ -3,6 +3,7 @@ let maxDate = 2024;
 currentDate = 2024;
 let dates = 4;
 datelist = []
+selectedDate = currentDate;
 
 
 function startDates() {
