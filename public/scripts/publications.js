@@ -1,17 +1,45 @@
 let minDate = 2010;
 let maxDate = 2024;
 currentDate = 2024;
+selectedDate = 2024;
 let dates = 4;
 datelist = []
 selectedDate = currentDate;
 
+function handleDateClick(date) {
+    selectedDate = date;
 
-function startDates() {
+    document.getElementById(`date${selectedDate}`).style.color = "#A6192E";
+
+    for (let i = 0; i < datelist.length; i++) {
+        if (datelist[i] != date) {
+            let notdate = datelist[i];
+            let notdateElement = document.getElementById(`date${notdate}`);
+            if (notdateElement) {
+                notdateElement.style.color = "black";
+            } else {
+                console.error(`Element with ID date${notdate} not found.`);
+            }
+        }
+    }
+    
+    let dateElement = document.getElementById(`${date}`);
+    if (dateElement) {
+        dateElement.style.display = "none";
+    } else {
+        console.error(`Element with ID ${date} not found.`);
+    }
+    document.getElementById(`${date}`).style.display = "block";
+}
+
+
+function loadDates() {
     let firstDate = currentDate;
     datelist = [];
     for (let i = 0; i < dates; i++) {
         if (firstDate - i >= minDate) {
-        datelist.push(firstDate - i)}
+            datelist.push(firstDate - i)
+        }
     }
 
     if (currentDate < maxDate) {
@@ -24,9 +52,11 @@ function startDates() {
     </svg>`;
     }
 
+
+
     for (let i = 0; i < datelist.length; i++) {
         document.getElementById("dateSlider").innerHTML += `
-        <div class="date" id="date${i}">
+        <div class="date" id="date${datelist[i]}"onclick="handleDateClick(${datelist[i]})" >
             ${datelist[i]}
         </div>`;
     }
@@ -46,7 +76,8 @@ function RightButtonClick() {
     if (currentDate - 4 > minDate) {
         currentDate -= 4;
         document.getElementById("dateSlider").innerHTML = '';
-        startDates();
+        loadDates();
+
     }
 }
 
@@ -54,9 +85,9 @@ function LeftButtonClick() {
     if (currentDate < maxDate) {
         currentDate += 4;
         document.getElementById("dateSlider").innerHTML = '';
-        startDates();
+        loadDates();
     }
 }
 
 
-window.onload = startDates();
+window.onload = loadDates();
