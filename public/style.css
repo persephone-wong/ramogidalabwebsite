@@ -18,6 +18,14 @@ a {
     color: #F19C33;
 }
 
+#sfu {
+    color: #A6192E;
+}
+
+#sfu:hover {
+    color: #138C82;
+}
+
 #bccancer {
     color: #945ca4
 }
@@ -42,7 +50,7 @@ a:hover {
     padding: 2rem;
     border: 3px solid #584632;
     overflow: auto;
-    background-color: #F0EECD;
+    background-color: white;
     transform: translate(-50%, -50%);
 }
 
@@ -78,10 +86,6 @@ a:hover {
     100% {opacity: 1}
 }
 
-body {
-    background-color: #F0EECD;
-
-}
 
 #research_intro {
     display: block;

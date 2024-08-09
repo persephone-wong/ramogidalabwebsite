@@ -77,10 +77,6 @@ app.get('/contact', (req, res) => {
     res.render('contact.ejs');
 });
 
-app.get('/news', (req, res) => {
-    res.render('news.ejs');
-});
-
 app.get('*', (req, res) => {
     res.status(404).render('error.ejs');
 });
