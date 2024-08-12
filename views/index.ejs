@@ -1,29 +1,29 @@
 <%- include('../templates/header'); -%>
 
 
-    <div class="pt-12 mt-8 text-7xl text-center flex flex-row justify-between">
-        <div class="w-1/6">
+    <div class="sm:pt-12 mt-8 text-center flex flex-row justify-between">
+        <div class="w-1/12 sm:w-1/6">
         </div>
-        <div class="w-4/6 items-center flex flex-col">
-            <div>Nuclear Medicinal Chemistry Research Group at Simon Fraser University</div>
+        <div class="w-11/12 sm:w-4/6 items-center flex flex-col">
+            <div class="text-5xl sm:text-7xl">Nuclear Medicinal Chemistry Research Group at Simon Fraser University</div>
             <div class="pt-4 text-xl">We work at <a id="triumf" class="font-semibold"
                 href="https://www.triumf.ca/">TRIUMF</a> – Canada’s particle accelerator centre – to produce innovative
                 and unconventional radiometals, synthesize and characterize novel radiometal chelators and bioconjugates
                 at <a class="font-semibold" id="sfu" href="http://www.sfu.ca/chemistry.html">Simon Fraser University</a>, and evaluate our novel radiopharmaceuticals in vivo in collaboration with
                 molecular oncologists and radiopharmacists across the country. </div>
 
-            <div id="modal_button" class="text-2xl px-4 py-2 mt-10 rounded-full border-4">
+            <button id="modal_button" class="text-2xl px-4 py-2 mt-10 rounded-full border-4">
                 Research Overview
-            </div>
+            </button>
         </div>
-        <div class="w-1/6"></div>
+        <div class="w-1/12 sm:w-1/6"></div>
     </div>
 
     <div id="pageModal" class="modal">
         <div class="modal-content px-6 text-xl space-y-2">
             <span class="close text-5xl">x</span>
             <div class="font-bold text-4xl">Research Overview</div>
-            <div class="flex flex-row space-x-1">
+            <div class="sm:flex flex-row space-x-1">
                 <p>Radiopharmaceutical therapy (RPT) and radiopharmaceutical imaging are powerful techniques with the
                     ability to image disease non-invasively and subsequently treat the diseased tissue by injecting a
                     radioactive isotope fused to a disease-targeting biomolecule. The targeting vector (aka biomolecule)
