@@ -103,6 +103,12 @@ a:hover {
 #research_1 {
     display: none;
     min-height: 450px;
+} 
+
+@media screen and (max-width: 640px) {
+    #research_1 {
+        display: block;
+    }
 }
 
 #research_2 {
@@ -110,13 +116,31 @@ a:hover {
     min-height: 450px;
 }
 
+@media screen and (max-width: 640px) {
+    #research_2 {
+        display: block;
+    }
+}
+
 #research_3 {
     display: none;
     min-height: 450px;
 }
 
+@media screen and (max-width: 640px) {
+    #research_3 {
+        display: block;
+    }
+}
+
 #research_dot_intro {
     display: block;
+}
+
+@media screen and (max-width: 640px) {
+    #research_dot_intro {
+        display: none;
+    }
 }
 
 #research_dot_1 {
