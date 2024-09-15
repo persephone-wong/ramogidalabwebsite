@@ -74,7 +74,7 @@ app.get('/publications', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-    res.render('contact.ejs');
+    res.render('contact.ejs', { googleMapsKey: process.env.GOOGLE_KEY });
 });
 
 app.get('*', (req, res) => {
