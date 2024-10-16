@@ -35,9 +35,6 @@ app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
 });
 
-app.listen(3000, () => {
-    console.log('server started');
-});
 
 express.static('public');
 app.use(express.static(path.join(__dirname, '../scripts')));
