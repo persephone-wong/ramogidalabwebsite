@@ -205,8 +205,9 @@
         }
     
         // Check if the screen width is larger than 640px (sm breakpoint in Tailwind CSS)
-        if (window.innerWidth >= 640 && window.innerWidth < 1000) {
+        if (window.innerWidth >= 640 && window.innerWidth < 1920) {
             loadScript('scripts/research.js');
+            console.log(window.innerWidth);
         } else {
             console.log("Screen width is less than 640px");
         }
