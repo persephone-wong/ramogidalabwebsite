@@ -133,7 +133,11 @@ a:hover {
     }
 }
 
-#research_dot_intro {
+#research_dot_0_blank {
+    display: none;
+}
+
+#research_dot_0_filled {
     display: block;
 }
 
@@ -143,16 +147,28 @@ a:hover {
     }
 }
 
-#research_dot_1 {
-    display: none;
+#research_dot_1_blank {
+    display: block;
 }
 
-#research_dot_2 {
-    display: none;
+#research_dot_1_filled {
+    display: none
 }
 
-#research_dot_3 {
-    display: none;
+#research_dot_2_blank {
+    display: block;
+} 
+
+#research_dot_2_filled {
+    display: none
+}
+
+#research_dot_3_blank {
+    display: block;
+}
+
+#research_dot_3_filled {
+    display: none
 }
 
 #sfu_address {
